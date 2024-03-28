@@ -1,0 +1,17 @@
+{
+    name: "Jhon", // in a json file you should put the key between double quotation
+    "age": 30,
+    "jsStudent": true,
+    "address": {
+      "city": "Tunis",
+      "zipCode": 1200,
+      "street": {
+        "number": 1,
+        "name": "Mouaouia ibn abi soufiane"
+      }, // in a json file you can not put a comma after the last attribute of an object
+    },
+    "languages": ["arabic", "French", "English"],
+    "isNull": null, // in a json file you can not put a comma after the last attribute of an object
+  }
+
+  // in a json file you cannot put comments

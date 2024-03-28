@@ -21,6 +21,10 @@ const student = {
   address: {
     city: "Tunis",
     zipCode: 1200,
+    street: {
+      number: 1,
+      name: "Mouaouia ibn abi soufiane",
+    },
   },
   languages: ["arabic", "French", "English"],
   isNull: null,

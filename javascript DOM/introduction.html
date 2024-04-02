@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Introduction</title>
+</head>
+<body>
+    <div id="firstDiv">
+        <p></p>
+        <p class="hello">Hello Teklick</p>
+    </div>
+
+
+    <div class="hello">content</div>
+    <!-- This is comment -->
+
+    <script lang="javascript">
+        const divs = document.getElementsByTagName('div');
+
+        console.log(divs);
+
+        const firstDiv = document.getElementById("firstDiv");
+
+        console.log( firstDiv.firstElementChild);
+
+        let counter = 0;
+
+        function changeContent() {
+            firstDiv.firstElementChild.textContent = "Teklick " + counter;
+            counter ++;
+
+            if(counter > 10) {
+                firstDiv.style.backgroundColor = "red"
+            }
+        }
+
+        setInterval(() => changeContent(), 500 ); // in ms
+
+        // we need the background to be green
+
+        firstDiv.style.color = "white";
+
+        firstDiv.style.backgroundColor = "green";
+
+        firstDiv.style.padding = "5px";
+
+        firstDiv.lastElementChild.style.color = "black";
+
+        const helloP = document.querySelector(".hello");
+
+        console.log(helloP);
+
+
+        const firstDivById = document.querySelector("#firstDiv");
+
+        console.log(firstDivById);
+
+        const helloPbyClass = document.getElementsByClassName("hello");
+
+        console.log(helloPbyClass);
+
+        // firstDiv.removeChild(helloP);
+
+        firstDiv.removeChild(firstDiv.firstElementChild); // we will remove the first element from the div 
+
+    </script>    
+</body>
+</html>

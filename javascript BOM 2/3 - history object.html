@@ -1,0 +1,26 @@
+<!-- Location object is an object inside the window object and that controls urls -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script lang="javascript">
+      console.log(history.length);
+
+      console.log(history.back());
+
+      console.log(history.forward());
+
+      console.log(history.go(-2));
+
+
+      setTimeout(()=> {
+          history.back();
+      }, 3000);
+    </script>
+  </body>
+</html>

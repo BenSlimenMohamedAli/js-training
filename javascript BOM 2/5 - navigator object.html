@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script lang="javascript">
+      console.log(navigator.userAgent);
+
+      console.log(navigator.appName);
+
+      console.log(navigator.appVersion);
+
+      console.log(navigator.platform);
+
+      console.log(navigator.language);
+
+      console.log(navigator.cookieEnabled);
+
+      if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition((position) => {
+              console.log('Latitude :', position.coords.latitude);
+              console.log('Longitude :', position.coords.longitude);
+          })
+      } else {
+          console.log('No Geolocation');
+      }
+    </script>
+  </body>
+</html>
